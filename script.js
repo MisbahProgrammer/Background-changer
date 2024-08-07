@@ -15,3 +15,17 @@ function greenColor (){
 function yellowColor (){
     container.style.backgroundColor = 'yellow';
 }
+
+//Box 2
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+    const screen = document.getElementById('screen');
+    const colors = document.querySelectorAll('.color');
+
+    colors.forEach(color => {
+        color.addEventListener('click', () => {
+            const colorId = color.id;
+            screen.style.backgroundColor = colorId;
+        });
+    });
+});
